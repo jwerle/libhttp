@@ -1,0 +1,33 @@
+{
+  "name": "http",
+  "version": "0.0.1",
+  "repo": "jwerle/libhttp",
+  "description": "Micro http library",
+  "keywords": ["http", "request"],
+  "license": "MIT",
+  "src": [
+    "http.h",
+
+    "include/http/common.h",
+    "include/http/request.h",
+    "include/http/response.h",
+    "include/http/client.h",
+    "include/http/server.h",
+
+    "src/request.c",
+    "src/response.c",
+    "src/client.c",
+    "src/server.c"
+  ],
+
+  "dependencies": {
+    "jwerle/libsock": "*",
+    "http-parser": "*",
+    "hash": "*"
+  },
+
+  "devDependencies": {
+    "jwerle/libok": "*"
+  }
+}
+
